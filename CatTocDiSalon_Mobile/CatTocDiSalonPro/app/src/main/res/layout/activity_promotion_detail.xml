@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ServiceActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Khuyến mãi"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/darkTextColor" />
+
+            <TextView
+                android:id="@+id/promotion_detail_save_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/light"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/activity_promotion_detail_discount"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:background="@drawable/ic_tag_outline"
+        android:text=""
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#D80027"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề"
+        android:gravity="center_horizontal"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/activity_promotion_detail_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/darkTextColor"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày áp dụng"
+        android:gravity="center_horizontal"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/activity_promotion_detail_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkTextColor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginVertical="12dp"/>
+
+    <TextView
+        android:id="@+id/service_detail_delete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dừng khuyến mãi này"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/errorColor"/>
+
+
+</LinearLayout>

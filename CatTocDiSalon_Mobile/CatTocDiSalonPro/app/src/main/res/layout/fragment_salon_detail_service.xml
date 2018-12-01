@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/title_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/primary"
+                android:text="KHUYẾN MÃI"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/salon_promotion_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_promotion"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/salon_promotion_manage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật khuyến mãi"
+            android:textColor="@color/lightTextColor"
+            android:paddingHorizontal="16dp"
+            android:layout_below="@id/salon_promotion_recycle_view"
+            android:layout_marginVertical="8dp"
+            android:layout_centerHorizontal="true"
+            android:stateListAnimator="@drawable/click_effect"
+            android:background="@drawable/border_radius_edit_text_fill_primary"/>
+
+        <LinearLayout
+            android:id="@+id/title_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp"
+            android:layout_below="@id/salon_promotion_manage_btn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="DỊCH VỤ"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/salon_service_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_service"
+            android:scrollbars="vertical" />
+        <Button
+            android:id="@+id/salon_service_manage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật dịch vụ"
+            android:textColor="@color/lightTextColor"
+            android:paddingHorizontal="16dp"
+            android:layout_below="@id/salon_service_recycle_view"
+            android:layout_marginVertical="8dp"
+            android:layout_centerHorizontal="true"
+            android:stateListAnimator="@drawable/click_effect"
+            android:background="@drawable/border_radius_edit_text_fill_primary"/>
+        <LinearLayout
+            android:id="@+id/title_working_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salon_service_manage_btn"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:paddingHorizontal="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="GIỜ LÀM VIỆC"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/primary"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_salon_working_hours_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_working_hour">
+
+        </android.support.v7.widget.RecyclerView>
+        <!--<TableLayout
+            android:id="@+id/tbl_working_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_working_hour"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="8dp"
+            android:paddingHorizontal="12dp"
+            android:stretchColumns="0">
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 2"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="8:00 - 20:00"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 3"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="8:00 - 20:00"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 4"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="8:00 - 20:00"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 5"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="8:00 - 20:00"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 6"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="8:00 - 20:00"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Thứ 7"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="9:00 - 22:00"
+                    android:textSize="16dp" />
+            </TableRow>
+            <TableRow android:layout_marginVertical="2dp">
+                <TextView
+                    android:text="Chủ Nhật"
+                    android:textSize="16dp" />
+                <TextView
+                    android:text="9:00 - 22:00"
+                    android:textSize="16dp" />
+            </TableRow>
+        </TableLayout>-->
+
+        <Button
+            android:id="@+id/salon_working_hours_manage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật giờ làm việc"
+            android:textColor="@color/lightTextColor"
+            android:paddingHorizontal="16dp"
+            android:layout_below="@id/activity_salon_working_hours_rv"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_centerHorizontal="true"
+            android:stateListAnimator="@drawable/click_effect"
+            android:background="@drawable/border_radius_edit_text_fill_primary"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E6B755A-12C4-4F6C-9770-07A726638564}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cattocdi.Service</RootNamespace>
+    <AssemblyName>cattocdi.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constant\AppointmentStatusConstant.cs" />
+    <Compile Include="Constant\PromotionEnum.cs" />
+    <Compile Include="Constant\RoleConstant.cs" />
+    <Compile Include="Implement\AppointmentServices.cs" />
+    <Compile Include="Implement\CustomerService.cs" />
+    <Compile Include="Implement\SalonServices.cs" />
+    <Compile Include="Implement\CategoryServices.cs" />
+    <Compile Include="Implement\SlotTimeService.cs" />
+    <Compile Include="Interface\IAppointmentServices.cs" />
+    <Compile Include="Interface\ICustomerService.cs" />
+    <Compile Include="Interface\ISalonServices.cs" />
+    <Compile Include="Interface\ICategoryServices.cs" />
+    <Compile Include="Interface\ISlotTimeService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\User\AppointmentViewModel.cs" />
+    <Compile Include="ViewModel\User\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\User\ClosedDayViewModel.cs" />
+    <Compile Include="ViewModel\User\CustomerViewModel.cs" />
+    <Compile Include="ViewModel\User\NewAppointmentViewModel.cs" />
+    <Compile Include="ViewModel\User\ProfileViewModel.cs" />
+    <Compile Include="ViewModel\User\PromotionViewModel.cs" />
+    <Compile Include="ViewModel\User\ReviewViewModel.cs" />
+    <Compile Include="ViewModel\User\SalonDetailViewModel.cs" />
+    <Compile Include="ViewModel\User\SalonServiceViewModel.cs" />
+    <Compile Include="ViewModel\User\SalonViewModel.cs" />
+    <Compile Include="ViewModel\User\ServiceAppointmentViewModel.cs" />
+    <Compile Include="ViewModel\User\ServiceViewModel.cs" />
+    <Compile Include="ViewModel\User\SlotDateViewModel.cs" />
+    <Compile Include="ViewModel\User\SlotTimeViewModel.cs" />
+    <Compile Include="ViewModel\User\TimeSlotViewModel.cs" />
+    <Compile Include="ViewModel\User\WorkDayViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cattocdi.entity\cattocdi.entity.csproj">
+      <Project>{D4E5D94A-2C9A-473B-9D1E-26D3AB28B5C2}</Project>
+      <Name>cattocdi.entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cattocdi.repository\cattocdi.repository.csproj">
+      <Project>{BE9A8F9B-B0AB-48C2-A3D0-B232E2E21E08}</Project>
+      <Name>cattocdi.repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

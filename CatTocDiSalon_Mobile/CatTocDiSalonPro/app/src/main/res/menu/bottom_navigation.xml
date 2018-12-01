@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_home_item"
+        android:icon="@drawable/ic_home"
+        android:title="Trang chủ"></item>
+
+    <!--<item-->
+        <!--android:icon="@drawable/ic_discount"-->
+        <!--android:title="Khuyến mãi"></item>-->
+    <item
+        android:id="@+id/bottom_nav_schedule_item"
+        android:icon="@drawable/ic_calendar_active"
+        android:title="Lịch"></item>
+    <item
+        android:id="@+id/bottom_nav_client_item"
+        android:icon="@drawable/ic_customer"
+        android:title="Khách hàng"></item>
+
+    <item
+        android:id="@+id/bottom_nav_profile_item"
+        android:icon="@drawable/ic_profile"
+        android:title="Tài khoản"></item>
+
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--<color name="mainPrimary">#ba68c8</color>
+    <color name="mainLight">#ee98fb</color>
+    <color name="mainDark">#883997</color>-->
+
+    //slash
+    <color name="firstColor">#91a7d0</color>
+    <color name="secondColor">#f7c9c9</color>
+    <color name="thirdColor" >#b3d78f</color>
+
+    <color name="mainPrimary">#F6D155</color>
+    <color name="mainLight">#F7CAC9</color>
+    <color name="mainDark">#6B5B95</color>
+    <color name="secondMainDark">#ae52d4</color>
+    <color name="second_main_dark">#ae52d4</color>
+    <color name="yellowPrimary">#ffff00</color>
+
+    <color name="textForDark">#ffffff</color>
+    <color name="textForLight">#000000</color>
+    <color name="textForGrey">#C0C0C0</color>
+
+    <color name="secondPrimary">#6B5B95</color>
+    <color name="secondLight">#ffc947</color>
+    <color name="secondDark">#6B5B95</color>
+
+    <color name="textLink">#65b7d7</color>
+
+    <!--<color name="textLogin">#6b5b95</color>-->
+
+    <color name="textLogin">#5f3f72</color>
+    <color name="bgLogin">#8d6aa1</color>
+    <color name="icLogin">#5f3f72</color>
+    <!--<color name="icLogin">#341746</color>-->
+<!--<color name="bgLogin">#9a88c6</color>-->
+    <!--<color name="icLogin">#3e3167</color>-->
+
+    <color name="primary">#5f3f72</color>
+    <color name="light">#8d6aa1</color>
+    <color name="dark">#341746</color>
+    <color name="highlight">#c158dc</color>
+    <color name="textColorTint">#808080</color>
+    <color name="eee">#eeeeee</color>
+    
+    //profile
+    <color name="back_profile">#9A88C6</color>
+    <color name="test1">#f1e9ff</color>
+    <color name="test2">#e8bad2</color>
+</resources>
+

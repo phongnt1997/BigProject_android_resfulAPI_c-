@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    android:layout_marginBottom="@dimen/mg_top_login_page">
+    <RelativeLayout
+        android:id="@+id/rc_explain_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_help_outline_black_24dp" />
+        <TextView
+            android:id="@+id/fg_how_get_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:text="Làm sao để tích điểm"
+            android:textColor="@color/textForLight"
+            android:textSize="18dp" />
+        <com.alespero.expandablecardview.ExpandableCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="8dp"
+            app:title="Chi tiết"
+            android:layout_gravity="right"
+            app:expandOnClick="true"
+            app:inner_view="@layout/fragment_user_point_item_expand_explain_point"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

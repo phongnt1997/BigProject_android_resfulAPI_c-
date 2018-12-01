@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingHorizontal="12dp"
+    android:clipToPadding="false">
+    <TextView
+        android:id="@+id/service_signup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:text="Cắt tóc nam"/>
+    <TextView
+        android:id="@+id/service_signup_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_signup_title"
+        android:text="Giá:  "
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/service_signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_signup_title"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/service_signup_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/service_signup_price"
+        android:text="Thời gian:  min"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/service_signup_add"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_add"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@id/service_signup_duration"
+        android:layout_marginTop="12dp"
+        />
+</RelativeLayout>

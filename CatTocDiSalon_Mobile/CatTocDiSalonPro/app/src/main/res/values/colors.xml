@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5f3f72</color>
+    <color name="light">#8d6aa1</color>
+    <color name="dark">#341746</color>
+    <color name="highlight">#c158dc</color>
+
+    <color name="textColorTint">#808080</color>
+    <color name="lightTextColor">#ffffff</color>
+    <color name="darkTextColor">#000000</color>
+    <color name="ratingColor">#ffc947</color>
+    <color name="errorColor">#d11c1f</color>
+    <color name="approved">#49ae1e</color>
+
+    <color name="tableLight">#C8E6C9</color>
+    <color name="tableLightDisable">#EEE</color>
+
+
+</resources>

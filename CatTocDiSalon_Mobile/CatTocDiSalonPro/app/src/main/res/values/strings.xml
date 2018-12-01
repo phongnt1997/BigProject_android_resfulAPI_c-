@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">StyleViet Salon</string>
+    <string name="vn_username">Tên đăng nhập</string>
+    <string name="vn_password">Mật khẩu</string>
+    <string name="vn_login">Đăng nhập</string>
+    <string name="vn_register">Đăng ký</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAkGcUBkhQpd3oBBg_E6KvA83W9Y3EZmlI</string>
+    <string name="vn_add">Thêm</string>
+    <string name="salon_name">Tên cửa hàng</string>
+    <string name="email">Email</string>
+    <string name="phone">Điện thoại</string>
+    <string name="password">Mật khẩu</string>
+    <string-array name="service_duration_array">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+        <item>135</item>
+    </string-array>
+</resources>

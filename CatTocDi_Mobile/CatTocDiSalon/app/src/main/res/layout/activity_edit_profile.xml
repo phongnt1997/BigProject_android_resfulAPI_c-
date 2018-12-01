@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingVertical="32dp">
+
+        <ImageView
+            android:id="@+id/avata_imv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:background="@color/primary"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/acitivty_edit_profile_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/textForDark"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrolView_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/linear_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Thông tin cá nhân"
+                    android:textColor="@color/textForLight"
+                    android:layout_marginHorizontal="16dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mg_top_edit_text"
+                    android:layout_marginHorizontal="16dp"
+                    android:textColorHint="@color/textForLight">
+
+                    <EditText
+                        android:id="@+id/activity_edit_profile_firstname_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tên"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColorHint="@color/textForLight" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mg_top_edit_text"
+                    android:layout_marginHorizontal="16dp"
+                    android:textColorHint="@color/textForLight">
+
+                    <EditText
+                        android:id="@+id/activity_edit_profile_lastname_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Họ"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColorHint="@color/textForLight" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mg_top_edit_text"
+                    android:layout_marginHorizontal="16dp"
+                    android:textColorHint="@color/textForLight">
+
+                    <EditText
+                        android:id="@+id/activity_edit_profile_email_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/textForLight" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mg_top_edit_text"
+                    android:layout_marginHorizontal="16dp"
+                    android:textColorHint="@color/textForLight">
+
+                    <EditText
+                        android:id="@+id/activity_edit_profile_phone_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Số điện thoại"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPhonetic"
+                        android:textColorHint="@color/textForLight" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_update_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="@dimen/mg_top_login_page"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:stateListAnimator="@drawable/click_effect_btn"
+                    android:text="@string/vn_edit_profile"
+                    android:textColor="@color/textForDark"
+                    android:textSize="@dimen/ts_button_login_page"
+                    android:textStyle="bold"
+                    android:theme="@style/MyButton" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

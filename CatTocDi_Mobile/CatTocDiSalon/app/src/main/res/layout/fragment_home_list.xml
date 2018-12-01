@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingVertical="12dp"
+    tools:context=".fragements.HomeFragment">
+
+    <EditText
+        android:id="@+id/fg_home_search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/border_radius_edit_text"
+        android:drawableRight="@drawable/ic_search_navigation"
+        android:drawablePadding="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:editable="false"
+        android:hint="@string/vn_search"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="@color/textForLight" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/fg_home_sale_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_discount"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="12dp"
+                    android:text="@string/vn_top_sale"
+                    android:textColor="@color/textForLight"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fg_home_voucher_see_all_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignBottom="@id/fg_home_sale_tv"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/ic_arrow_right_blue"
+                    android:layout_marginHorizontal="12dp"
+                    android:gravity="center_vertical"
+                    android:text="Xem tất cả"
+                    android:textColor="@color/textLink" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fg_home_rv_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fg_home_sale_tv" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="8dp">-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fg_home_new_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="48dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:drawablePadding="8dp"-->
+                    <!--android:drawableRight="@drawable/ic_new"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_marginHorizontal="12dp"-->
+                    <!--android:text="Mới"-->
+                    <!--android:textColor="@color/textForLight"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/fg_home_new_see_all_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="48dp"-->
+                    <!--android:layout_alignBottom="@id/fg_home_new_tv"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:drawableRight="@drawable/ic_arrow_right_blue"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_marginHorizontal="12dp"-->
+                    <!--android:text="Xem tất cả"-->
+                    <!--android:textColor="@color/textLink" />-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/fg_home_rv_new"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="6dp"-->
+                    <!--android:layout_below="@id/fg_home_new_tv" />-->
+            <!--</RelativeLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/fg_home_near_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/vn_nearest_salon"
+                    android:textColor="@color/textForLight"
+                    android:layout_marginHorizontal="12dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fg_home_rv_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fg_home_near_tv"
+                    android:layout_marginBottom="@dimen/mr_bottom_not_cover_content"/>
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_below="@id/fg_home_rv_rating"-->
+                <!--android:layout_marginBottom="50dp"-->
+                <!--android:background="@drawable/border_radius_outline_btn"-->
+                <!--android:gravity="center_vertical|center_horizontal"-->
+                <!--android:text="Xem tất cả"-->
+                <!--android:textColor="@color/textLogin" />-->
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:clipToPadding="false"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="40dp"
+        android:background="@drawable/logo_styleviet"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/pd_layout_login_page">
+        <EditText
+            android:id="@+id/signup_activity_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vn_phone"
+            android:background="@drawable/border_radius_edit_text"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="24dp"
+            android:textColor="@color/textForLight"
+            android:textColorHint="@color/textColorTint"
+            android:padding="@dimen/pd_et"
+            android:layout_marginBottom="16dp"
+            android:inputType="phone"
+
+            />
+        <EditText
+            android:id="@+id/signup_activity_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vn_password"
+            android:background="@drawable/border_radius_edit_text"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="24dp"
+            android:textColor="@color/textForLight"
+            android:textColorHint="@color/textColorTint"
+            android:padding="@dimen/pd_et"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/signup_activity_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vn_name"
+            android:background="@drawable/border_radius_edit_text"
+            android:drawableLeft="@drawable/ic_profile_navigation"
+            android:drawablePadding="24dp"
+            android:textColor="@color/textForLight"
+            android:textColorHint="@color/textColorTint"
+            android:padding="@dimen/pd_et"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/signup_activity_male_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam"
+                android:textColor="@color/textForDark"
+                android:background="@drawable/border_radius_btn_gender_left_fill"/>
+
+            <Button
+                android:id="@+id/signup_activity_female_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ"
+                android:textColor="@color/textForLight"
+                android:background="@drawable/border_radius_btn_gender_right"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_activity_signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Đăng ký"
+            android:textColor="@color/textForDark"
+            android:textSize="@dimen/ts_button_login_page"
+            android:layout_marginTop="12dp"
+            android:stateListAnimator="@drawable/click_effect_btn"
+            android:theme="@style/MyButton"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/dark"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/signup_activity_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vn_login"
+            android:padding="@dimen/pd_button_login_page"
+            android:layout_marginVertical="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border_radius_outline_btn"
+            android:stateListAnimator="@drawable/click_effect_btn"
+            android:textColor="@color/dark"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

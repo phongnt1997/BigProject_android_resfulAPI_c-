@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/login_activity_ln"
+        android:background="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:id="@+id/login_activity_ln"
+        android:padding="12dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:id="@+id/login_activity_username_et"
+            android:textColor="@color/darkTextColor"
+            android:background="@drawable/border_radius_edit_text"
+            android:padding="@dimen/padding_edit_text"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="@string/vn_username"
+            android:text="salon01"
+            android:textColorHint="@color/textColorTint"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="@dimen/padding_icon_with_content_edit_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/login_activity_password_et"
+            android:textColor="@color/darkTextColor"
+            android:background="@drawable/border_radius_edit_text"
+            android:padding="@dimen/padding_edit_text"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/vn_password"
+            android:text="123"
+            android:textColorHint="@color/textColorTint"
+            android:drawablePadding="@dimen/padding_icon_with_content_edit_text"/>
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/vn_login"
+            android:textColor="@color/lightTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_button_match_parent"
+            android:stateListAnimator="@drawable/click_effect"
+            android:id="@+id/login_activity_login_btn"
+            android:background="@drawable/ripple_effect"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/light"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/dark"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_marginVertical="16dp"
+            android:id="@+id/login_activity_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vn_register"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius_outline_button_small"
+            android:stateListAnimator="@drawable/click_effect"
+            android:textColor="@color/dark"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

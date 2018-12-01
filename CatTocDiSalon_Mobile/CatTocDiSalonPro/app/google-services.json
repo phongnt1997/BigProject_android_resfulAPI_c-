@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "264694462907",
+    "firebase_url": "https://cattocdipro.firebaseio.com",
+    "project_id": "cattocdipro",
+    "storage_bucket": "cattocdipro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264694462907:android:9aa8ba7634a24fba",
+        "android_client_info": {
+          "package_name": "com.pro.salon.cattocdi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264694462907-368uggomto6b4hpbcbd6tksvjk0ki6bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC3DEItI8zhLTM29EdobbngDRlok1dF40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

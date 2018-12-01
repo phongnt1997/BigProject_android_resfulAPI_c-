@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appointment_item_expand_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/appointment_item_expand_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salon 1"
+        android:textColor="@color/textForLight"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appointment_item_expand_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_item_expand_name_tv"
+        android:text="Thứ 5, 18/10/2018"
+        android:textColor="@color/textForLight" />
+
+    <TextView
+        android:id="@+id/appointment_item_expand_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_item_expand_date_tv"
+        android:text="3:00PM - 4:00PM"
+        android:textColor="@color/textForLight" />
+
+    <Button
+
+        android:id="@+id/btnDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/appointment_item_expand_date_tv"
+        android:background="@drawable/ripple_btn"
+        android:paddingHorizontal="24dp"
+        android:stateListAnimator="@drawable/click_effect_btn"
+        android:text="Chỉ đường"
+        android:textColor="@color/light" />
+
+    <TableLayout
+        android:id="@+id/tbl_service_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_item_expand_time_tv"
+        android:layout_marginTop="16dp"
+        android:stretchColumns="0">
+
+        <View
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#eee" />
+
+        <TableRow android:layout_marginBottom="4dp">
+
+            <TextView
+                android:text="Tổng giá dịch vụ"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appointment_item_expand_sub_total_tv"
+                android:layout_marginRight="4dp"
+                android:text="550,000"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appointment_item_expand_unit_tv"
+                android:layout_gravity="right"
+                android:text="vnd"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="4dp">
+
+            <TextView
+                android:text="Giảm giá"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginRight="4dp"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appointment_item_expand_discount_tv"
+                android:layout_gravity="right"
+                android:text="30%"
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="-12dp">
+
+            <TextView
+                android:text=""
+                android:textColor="@color/textForLight"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_height="1.5dp"
+                android:background="#ccc" />
+
+            <View
+                android:layout_height="1.5dp"
+                android:background="#ccc" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="4dp">
+
+            <TextView
+                android:text="TỔNG CỘNG"
+                android:textColor="@color/textLogin"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appointment_item_expand_total_tv"
+                android:layout_marginRight="4dp"
+                android:text="385,000"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textLogin"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:text="vnd"
+                android:textColor="@color/textLogin"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tbl_service_bill"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:id="@+id/appointment_item_expand_review_ln">
+
+        <TextView
+            android:id="@+id/tvReasonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá của bạn"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/textForLight"
+            />
+
+        <RatingBar
+            android:id="@+id/appointment_item_expand_rb"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/secondLight"
+            android:rating="4.5"
+            android:layout_marginVertical="8dp"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/appointment_item_expand_comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment here!"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

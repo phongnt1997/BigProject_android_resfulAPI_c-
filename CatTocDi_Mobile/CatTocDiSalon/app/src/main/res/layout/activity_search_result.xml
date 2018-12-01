@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".SearchResultActivity">
+
+    <TextView
+        android:id="@+id/activity_search_result_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kết quả"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/textForLight"
+        android:layout_marginVertical="12dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_search_result_title_tv"
+        android:id="@+id/activity_search_result_rv"
+        />
+
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:text="@string/vn_map"-->
+        <!--android:textSize="16dp"-->
+        <!--android:textColor="@color/textForLight"-->
+        <!--android:drawableLeft="@drawable/ic_map"-->
+        <!--android:drawablePadding="8dp"-->
+        <!--android:background="@drawable/border_radius_outline_btn_white"-->
+        <!--android:paddingHorizontal="16dp"-->
+        <!--android:elevation="8dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"/>-->
+
+</RelativeLayout>

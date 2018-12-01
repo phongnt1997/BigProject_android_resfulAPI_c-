@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragements.SearchFragment">
+    <LinearLayout
+        android:id="@+id/fg_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/edt_place_fg_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_radius_edit_text"
+            android:hint="Địa điểm"
+            android:padding="@dimen/pd_et" />
+
+
+        <EditText
+            android:id="@+id/fg_search_service_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border_radius_edit_text"
+            android:hint="Dịch vụ"
+            android:padding="@dimen/pd_et"
+            android:editable="false"
+            android:textColor="@color/textForLight" />
+
+        <!--<EditText-->
+            <!--android:id="@+id/fg_search_date_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:background="@drawable/border_radius_edit_text"-->
+            <!--android:editable="false"-->
+            <!--android:hint="Ngày"-->
+            <!--android:padding="@dimen/pd_et" />-->
+
+
+        <Button
+            android:id="@+id/fg_search_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:stateListAnimator="@drawable/click_effect_btn"
+            android:theme="@style/MyButton"
+            android:text="Tìm kiếm"
+            android:textColor="@color/textForDark"
+            android:layout_marginBottom="24dp"
+            android:textSize="@dimen/ts_button_login_page" />
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="24dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Xu hướng tìm kiếm"-->
+                <!--android:textColor="@color/textForLight"-->
+                <!--android:textSize="18dp"-->
+                <!--android:textStyle="bold"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="24dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="36dp"-->
+                <!--android:layout_marginLeft="24dp"-->
+                <!--android:gravity="left">-->
+
+
+                <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                    <!--android:id="@+id/img_district_1"-->
+                    <!--android:layout_width="110dp"-->
+                    <!--android:layout_height="110dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/barber_shop"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:clickable="true"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Quận 1"-->
+                    <!--android:textColor="@color/textForLight"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:layout_gravity="center"/>-->
+
+                <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                    <!--android:id="@+id/img_district_2"-->
+                    <!--android:layout_width="110dp"-->
+                    <!--android:layout_height="110dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/barber_shop2"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--android:layout_gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Quận 2"-->
+                    <!--android:textColor="@color/textForLight"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:layout_gravity="center"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="24dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="36dp"-->
+                <!--android:layout_marginLeft="180dp"-->
+                <!--android:gravity="right">-->
+
+
+                <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                    <!--android:id="@+id/img_district_3"-->
+                    <!--android:layout_width="110dp"-->
+                    <!--android:layout_height="110dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/barber_shop2"-->
+                    <!--android:layout_gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Quận 3"-->
+                    <!--android:textColor="@color/textForLight"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:layout_gravity="center"/>-->
+
+                <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                    <!--android:id="@+id/img_district_4"-->
+                    <!--android:layout_width="110dp"-->
+                    <!--android:layout_height="110dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/barber_shop"-->
+                    <!--android:layout_marginTop="16dp"-->
+                    <!--android:layout_gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Quận 10"-->
+                    <!--android:textColor="@color/textForLight"-->
+                    <!--android:textSize="18dp" />-->
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

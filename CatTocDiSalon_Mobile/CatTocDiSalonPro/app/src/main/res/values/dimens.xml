@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_edit_text">12dp</dimen>
+    <dimen name="padding_icon_with_content_edit_text">24dp</dimen>
+    <dimen name="text_size_button_match_parent">16dp</dimen>
+    <dimen name="margin_bottom_above_bottom_nav">56dp</dimen>
+</resources>

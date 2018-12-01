@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceSignupActivity"
+    android:id="@+id/category_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật dịch vụ"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/darkTextColor" />
+
+            <TextView
+                android:id="@+id/activity_service_save_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LƯU"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:textColor="@color/light"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_category_signup_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_service_signup_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scrollbars="horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá của bạn về chất lượng của salon"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+    <RatingBar
+        android:id="@+id/review_dialog_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:progressTint="@color/secondLight"/>
+
+    <EditText
+        android:id="@+id/review_dialog_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:maxLines="6"
+        android:hint="Nhận xét của bạn ..."
+        android:textColor="@color/textForLight"
+        android:textSize="16dp"
+        android:gravity="top"
+        android:padding="8dp"
+        android:layout_marginVertical="16dp"/>
+
+    <Button
+        android:id="@+id/review_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:stateListAnimator="@drawable/click_effect_btn"
+        android:theme="@style/MyButton"
+        android:text="Gửi nhận xét"
+        android:textColor="@color/textForDark"/>
+</LinearLayout>

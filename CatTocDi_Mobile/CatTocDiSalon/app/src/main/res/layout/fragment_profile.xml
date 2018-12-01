@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fg_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textForDark"
+    tools:context=".fragements.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mr_bottom_not_cover_content">
+
+        <LinearLayout
+
+            android:id="@+id/fg_profile_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="insideOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/primary"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avata_imv"
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+
+                    android:layout_marginTop="48dp"
+
+                    android:src="@drawable/ic_account_circle_black_24dp" />
+
+                <TextView
+                    android:id="@+id/fg_profile_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@color/textForDark"
+                    android:textSize="20dp" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:text="Thành viên"-->
+                    <!--android:textColor="@color/textForDark"-->
+                    <!--android:textSize="14dp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_profile_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <!--<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/ripple_btn">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="24dp"-->
+                        <!--android:src="@drawable/ic_grade_black_24dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/show_top_tv"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="48dp"-->
+                        <!--android:clickable="true"-->
+                        <!--android:padding="24dp"-->
+                        <!--android:text="Top cửa hàng"-->
+                        <!--android:textColor="@color/textForLight"-->
+                        <!--android:textSize="16dp" />-->
+
+
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:layout_gravity="right|center_vertical"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:layout_marginRight="16dp"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:clickable="true"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;android:src="@drawable/ic_arrow_right" />&ndash;&gt;-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:background="@color/light"></View>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                    <!--android:layout_width="match_parent"-->
+
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="24dp"-->
+                        <!--android:src="@drawable/ic_dollar" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/show_user_point"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginLeft="48dp"-->
+                        <!--android:clickable="true"-->
+                        <!--android:padding="24dp"-->
+                        <!--android:text="Điểm tích lũy"-->
+                        <!--android:textColor="@color/textForLight"-->
+                        <!--android:textSize="16dp" />-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.5dp"-->
+                        <!--android:layout_gravity="bottom"-->
+                        <!--android:background="@color/light"></View>-->
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="24dp"
+                        android:src="@drawable/ic_history_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/fg_show_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48dp"
+                        android:clickable="true"
+                        android:padding="24dp"
+                        android:text="Lịch sử đặt lịch"
+                        android:textColor="@color/textForLight"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/light"></View>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="24dp"
+                        android:src="@drawable/ic_edit_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/edit_information_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48dp"
+                        android:clickable="true"
+                        android:padding="24dp"
+                        android:text="Xem thông tin cá nhân"
+                        android:textColor="@color/textForLight"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/light"></View>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="24dp"
+                        android:src="@drawable/ic_help_outline_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/help_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48dp"
+                        android:padding="24dp"
+                        android:text="Giúp đỡ"
+                        android:textColor="@color/textForLight"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/light"></View>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="24dp"
+                        android:src="@drawable/ic_exit_to_app_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/logout_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="48dp"
+                        android:clickable="true"
+                        android:padding="24dp"
+                        android:text="Đăng xuất"
+                        android:textColor="@color/textForLight"
+                        android:textSize="16dp" />
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
+
+
+
+

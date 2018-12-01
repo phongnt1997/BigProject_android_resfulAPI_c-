@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/salon_service_category_ln">
+
+        <TextView
+            android:id="@+id/salon_service_recycle_view_category_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category 1"
+            android:textStyle="bold"
+            android:textColor="@color/darkTextColor"
+            android:textSize="16dp"
+
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/salon_service_expand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_expand"
+            android:layout_alignParentRight="true"
+            />
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salon_service_expand_list"
+        app:el_duration="300"
+        app:el_expanded="true"
+        app:el_parallax="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/salon_servce_expand_list_rv">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+    
+</LinearLayout>

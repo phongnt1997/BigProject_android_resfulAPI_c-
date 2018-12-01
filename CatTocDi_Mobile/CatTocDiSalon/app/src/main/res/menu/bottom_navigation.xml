@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_home_item"
+        android:icon="@drawable/ic_home_navigation"
+        android:title="@string/vn_home"></item>
+    <item
+        android:id="@+id/bottom_nav_appointment_item"
+        android:icon="@drawable/ic_appointment_navigation"
+        android:title="@string/vn_appointment"></item>
+    <item
+        android:id="@+id/bottom_nav_search_item"
+        android:icon="@drawable/ic_search_navigation"
+        android:title="@string/vn_search"></item>
+    <!--<item-->
+        <!--android:id="@+id/bottom_nav_favorite_item"-->
+        <!--android:icon="@drawable/ic_favorite_border"-->
+        <!--android:title="@string/vn_favorite"></item>-->
+    <item
+        android:id="@+id/bottom_nav_profile_item"
+        android:icon="@drawable/ic_profile_navigation"
+        android:title="@string/vn_profile"></item>
+
+
+</menu>

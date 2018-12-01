@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:clipToPadding="false">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="80dp"
+        android:background="@drawable/logo_styleviet"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:id="@+id/login_activity_ln"
+        android:padding="@dimen/pd_layout_login_page">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:id="@+id/login_activity_phone_et"
+            android:textColor="@color/textForLight"
+            android:background="@drawable/border_radius_edit_text"
+            android:padding="@dimen/pd_et"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="@string/vn_phone"
+            android:textColorHint="@color/textColorTint"
+            android:layout_marginBottom="8dp"
+            android:text="0123456789"
+            android:drawablePadding="24dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/login_activity_password_et"
+            android:textColor="@color/textForLight"
+            android:background="@drawable/border_radius_edit_text"
+            android:padding="@dimen/pd_et"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="@string/vn_password"
+            android:textColorHint="@color/textColorTint"
+            android:text="123"
+            android:drawablePadding="24dp"/>
+
+        <Button
+            android:layout_marginTop="@dimen/mg_top_login_page"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/vn_login"
+            android:textColor="@color/textForDark"
+            android:textStyle="bold"
+            android:textSize="@dimen/ts_button_login_page"
+            android:stateListAnimator="@drawable/click_effect_btn"
+            android:theme="@style/MyButton"
+            android:id="@+id/login_activity_login_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/light"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/dark"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_marginVertical="16dp"
+            android:id="@+id/login_activity_register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vn_register"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius_outline_btn"
+            android:stateListAnimator="@drawable/click_effect_btn"
+            android:textColor="@color/dark"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

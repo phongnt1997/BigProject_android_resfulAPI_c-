@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/fg_appointment_rv_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/fg_appointment_upcomming_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calendar_past"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="Khách hàng"
+            android:textColor="@color/darkTextColor" />
+
+        <TextView
+            android:id="@+id/fg_appointment_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+            android:layout_alignParentRight="true"
+            android:text="24/10/2018" />
+
+        <TextView
+            android:id="@+id/fg_appointment_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fg_appointment_upcomming_tv"
+            android:textColor="@color/darkTextColor"
+            android:text="Ngọc Nguyễn"
+            android:textSize="16dp" />
+       <!-- <TextView
+            android:id="@+id/appointment_item_expand_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appointment_item_expand_date_tv"
+            android:text="3:00PM - 4:00PM"
+            android:textColor="@color/textForLight" />-->
+
+        <TextView
+            android:id="@+id/fg_appointment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fg_appointment_customer_name"
+            android:textColor="@color/darkTextColor"
+            android:text="3:00PM - 4:00PM"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+            android:layout_marginTop="46dp"
+            android:layout_alignParentRight="true"
+            android:text="Đã xác nhận" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">StyleViet</string>
+    <string name="vn_phone">Số điện thoại</string>
+    <string name="vn_password">Mật khẩu</string>
+    <string name="vn_login">Đăng nhập</string>
+    <string name="vn_forgot_password">Quên mật khẩu?</string>
+    <string name="vn_no_account">Chưa có tài khoản?</string>
+    <string name="vn_register">Đăng ký</string>
+    <string name="vn_skip_this_step">Bỏ qua bước này</string>
+    <string name="vn_home">Trang chủ</string>
+    <string name="vn_appointment">Lịch</string>
+    <string name="vn_search">Tìm kiếm</string>
+    <string name="vn_profile">Tài khoản</string>
+    <string name="vn_nearest_salon">Danh sách cửa hàng</string>
+    <string name="vn_top_rating">Cửa hàng được yêu thích</string>
+    <string name="vn_top_sale">Khuyến mãi HOT</string>
+    <string name="vn_upcoming_appointment">Lịch đặt sắp tới</string>
+    <string name="vn_appointment_past">Quá khứ</string>
+    <string name="vn_my_appointment">Lịch của tôi</string>
+    <string name="vn_view_profile">Chỉnh sửa thông tin</string>
+    <string name="vn_edit_profile">Thay đổi thông tin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vn_name">Họ và tên của bạn</string>
+    <string name="vn_email">Email</string>
+    <string name="vn_or">hoặc</string>
+    <string name="vn_activation_Code">Nhập mã xác nhận</string>
+    <string name="vn_services">Dịch vụ</string>
+    <string name="vn_favorite">Yêu thích</string>
+
+    <!-- TODO: API Keys -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAkGcUBkhQpd3oBBg_E6KvA83W9Y3EZmlI</string>
+    <string name="vn_detail">Chi tiết</string>
+    <string name="vn_book_appointment">Đặt ngay</string>
+    <string name="vn_map">Bản đồ</string>
+
+    <!--TODO: Book Appoinment -->
+    <string name="vn_service">Chọn dịch vụ</string>
+    <string name="vn_delete_appoinment">Đồng ý</string>
+    <string name="vn_cancel">Không</string>
+    <string name="dialog_text">Bạn có muốn hủy lịch hẹn này không?</string>
+    <string name="dialog_text_late">Bạn chỉ được hủy lịch hẹn trước 1 ngày</string>
+    <string name="dialog_text_expired">Bạn có muốn xóa lịch đã qua này không?</string>
+    <string name="dialog_title">Hủy lịch</string>
+</resources>

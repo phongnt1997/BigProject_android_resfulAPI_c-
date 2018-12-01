@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pd_layout_login_page">24dp</dimen>
+    <dimen name="pd_button_login_page">8dp</dimen>
+    <dimen name="mg_top_login_page">16dp</dimen>
+    <dimen name="ts_button_login_page">16dp</dimen>
+    <dimen name="width_border_et">1dp</dimen>
+    <dimen name="radius_border_et">5dp</dimen>
+    <dimen name="pd_et">12dp</dimen>
+    <dimen name="mr_bottom_not_cover_content">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="mg_left_profile">140dp</dimen>
+    <dimen name="mg_left_profile_avata">190dp</dimen>
+    <dimen name="mg_top_profile">25dp</dimen>
+    <dimen name="mg_top_profile_from_top">45dp</dimen>
+    <dimen name="mg_top_profile_from_top_name">75dp</dimen>
+    <dimen name="size_name_shop">20dp</dimen>
+    <dimen name="size_name_card">22dp</dimen>
+    <dimen name="size_username">20dp</dimen>
+
+    <!-- Name in profile-->
+    <dimen name="mg_top_profile_name">30dp</dimen>
+    <!-- Margin left-top in profile extesion-->
+    <dimen name="mg_left_profile_f2">20dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_1">150dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_2">200dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_3">250dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_4">300dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_5">350dp</dimen>
+    <dimen name="mg_top_profile_from_username_f2_logout">400dp</dimen>
+
+
+    <!-- Edit profile-->
+    <dimen name="mg_top_edit_text">16dp</dimen>
+</resources>

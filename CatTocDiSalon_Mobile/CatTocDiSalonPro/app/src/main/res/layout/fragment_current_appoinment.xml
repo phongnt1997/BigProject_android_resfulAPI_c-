@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HistoryAppointmentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fg_home_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border_radius_edit_text_fill_white"
+            android:drawablePadding="@dimen/padding_icon_with_content_edit_text"
+            android:drawableRight="@drawable/ic_search"
+            android:elevation="4dp"
+            android:hint="Số điện thoại hoặc tên khách hàng"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/padding_edit_text"
+            android:textColor="@color/darkTextColor"
+            android:textSize="14dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fg_home_appointment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

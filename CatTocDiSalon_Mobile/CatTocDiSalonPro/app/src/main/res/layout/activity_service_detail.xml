@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ServiceActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa thông tin dịch vụ"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/darkTextColor" />
+
+            <TextView
+                android:id="@+id/service_detail_save_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/light"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên dịch vụ"
+            android:textStyle="bold"
+            android:textColor="@color/darkTextColor"/>
+
+        <TextView
+            android:id="@+id/activity_detail_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cắt tóc nam"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh mục"
+            android:textStyle="bold"
+            android:textColor="@color/darkTextColor"/>
+
+        <TextView
+            android:id="@+id/activity_detail_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cắt tóc"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/service_detail_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá"
+            android:textStyle="bold"
+            android:textColor="@color/darkTextColor"/>
+
+        <EditText
+            android:id="@+id/service_detail_price_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30000"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/service_detail_price_unit_tv"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vnd"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/service_detail_duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian trung bình"
+            android:textStyle="bold"
+            android:textColor="@color/darkTextColor"/>
+
+        <EditText
+            android:id="@+id/service_detail_duration_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/service_detail_duration_unit_tv"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phút"
+            android:gravity="right"
+            android:background="@null"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <TextView
+        android:id="@+id/service_detail_delete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa dịch vụ này"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/errorColor"/>
+
+</LinearLayout>

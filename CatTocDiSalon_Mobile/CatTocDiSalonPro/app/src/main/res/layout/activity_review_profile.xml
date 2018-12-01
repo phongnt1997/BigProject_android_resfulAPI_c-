@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Cover Image -->
+
+    <TextView
+        android:id="@+id/fg_profile_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preview thông tin"
+        android:paddingVertical="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColor"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp"/>
+    <TextView
+        android:id="@+id/fg_profile_edit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉnh sửa"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/light"
+        />
+    <ImageView
+        android:layout_below="@id/fg_profile_title_tv"
+        android:focusableInTouchMode="true"
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salon1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dylan Salon"
+        android:textColor="@color/lightTextColor"
+        android:layout_alignTop="@id/header_cover_image"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="24dp"
+        android:background="#9d000000"/>
+    <ImageView
+        android:id="@+id/activity_review_favorite_ic"
+        android:layout_below="@id/fg_profile_title_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_opacity"
+        android:padding="4dp"
+        android:src="@drawable/ic_favorite_border_white" />
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detail_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_cover_image"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/detail_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+

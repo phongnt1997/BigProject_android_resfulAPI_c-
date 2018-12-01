@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/fg_appointment_rv_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/fg_appointment_upcomming_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calendar_past"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:text="Cuộc hẹn đã đặt"
+            android:textColor="@color/dark" />
+
+        <TextView
+            android:id="@+id/fg_appointment_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkTextColor"
+            android:layout_alignParentRight="true"
+            android:text="18/10/2018" />
+
+        <TextView
+            android:id="@+id/fg_contact_history_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fg_appointment_upcomming_tv"
+            android:textColor="@color/darkTextColor"
+            android:text="Ngọc Nguyễn"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/fg_appointment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fg_contact_history_customer_name"
+            android:textColor="@color/darkTextColor"
+            android:text="3:00 - 4:00" />
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        />
+</android.support.v7.widget.CardView>

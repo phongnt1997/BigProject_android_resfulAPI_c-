@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="12dp"
+    android:paddingHorizontal="12dp"
+    android:clipToPadding="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/frame_promotion_title">
+        <TextView
+            android:id="@+id/promotion_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:textColor="#000"
+            android:text=""/>
+        <TextView
+            android:id="@+id/promotion_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/promotion_date"
+            android:text=""/>
+
+
+        <TextView
+            android:id="@+id/promotion_discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_tag_full"
+            android:gravity="center|right"
+            android:paddingRight="4dp"
+            android:layout_marginTop="-8dp"
+            android:text=""
+            android:layout_alignParentRight="true"
+            android:textColor="@color/lightTextColor"
+            android:textSize="14dp" />
+        <ImageView
+            android:id="@+id/promotion_state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_checked"
+            android:background="#fff"
+            android:layout_alignBottom="@id/promotion_discount_tv"
+            android:layout_alignRight="@id/promotion_discount_tv"/>
+        <!--<TextView-->
+        <!--android:id="@+id/promotion_day_active"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="16dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:elevation="8dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="29/10 - 2/11"/>-->
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/promotion_ic_expand"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_expand"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_below="@id/promotion_day_active"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+    <!--android:id="@+id/promotion_expand_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/frame_promotion_title"-->
+    <!--app:el_expanded="true"-->
+    <!--app:el_duration="300"-->
+    <!--app:el_parallax="1">-->
+    <!--<TableLayout-->
+    <!--android:id="@+id/tbl_promotion_detail"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginVertical="8dp"-->
+    <!--android:paddingHorizontal="12dp"-->
+    <!--android:stretchColumns="0">-->
+    <!--<TableRow>-->
+    <!--<TextView-->
+    <!--android:text="7:00 AM - 9:00 AM"-->
+    <!--android:textSize="16dp" />-->
+    <!--<TextView-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:background="@drawable/ic_tag_full"-->
+    <!--android:textColor="@color/textForDark"-->
+    <!--android:gravity="center|right"-->
+    <!--android:text="30%"-->
+    <!--android:textSize="14dp" />-->
+    <!--</TableRow>-->
+
+    <!--<View android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#eee"-->
+    <!--android:layout_marginTop="-12dp"/>-->
+
+    <!--<TableRow>-->
+    <!--<TextView-->
+    <!--android:text="12:00 AM - 1:00 PM"-->
+    <!--android:textSize="16dp" />-->
+    <!--<TextView-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:background="@drawable/ic_tag_full"-->
+    <!--android:textColor="@color/textForDark"-->
+    <!--android:gravity="center|right"-->
+    <!--android:text="30%"-->
+    <!--android:textSize="14dp" />-->
+    <!--</TableRow>-->
+
+    <!--<View android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#eee"-->
+    <!--android:layout_marginTop="-12dp"/>-->
+
+    <!--<TableRow>-->
+    <!--<TextView-->
+    <!--android:text="2:00 PM - 3:00 PM"-->
+    <!--android:textSize="16dp" />-->
+    <!--<TextView-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:background="@drawable/ic_tag_full"-->
+    <!--android:textColor="@color/textForDark"-->
+    <!--android:gravity="center|right"-->
+    <!--android:text="30%"-->
+    <!--android:textSize="14dp" />-->
+    <!--</TableRow>-->
+    <!--<View android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#eee"-->
+    <!--android:layout_marginTop="-12dp"/>-->
+    <!--</TableLayout>-->
+    <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/frame_promotion_title"
+        />
+</RelativeLayout>

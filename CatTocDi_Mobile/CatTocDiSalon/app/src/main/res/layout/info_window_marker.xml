@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/marker_info_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/ic_marker_background"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/salon_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_discount_map"
+            android:gravity="center"
+            android:text="40%"
+            android:textColor="@color/textForDark"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salon_name_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/salon_image"
+            android:text="Beautiful hair" />
+
+        <RatingBar
+            android:id="@+id/salon_rating_map"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salon_name_map"
+            android:layout_toRightOf="@id/salon_image"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/secondLight"
+            android:rating="4.5"
+            android:secondaryProgressTint="@color/textLogin"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/info_window_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/salon_rating_map"
+            android:layout_toRightOf="@id/salon_image"
+            android:text="Còn chỗ"
+            android:textColor="#1565C0"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/marker_icon"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_marker"/>
+</LinearLayout>
